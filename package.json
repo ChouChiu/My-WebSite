@@ -28,6 +28,7 @@
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/vue": "^5.1.4",
     "@biomejs/biome": "^2.4.4",
+    "@types/node": "^25.3.0",
     "astro": "^5.17.3",
     "hastscript": "^9.0.1",
     "typescript": "^5.9.3"
