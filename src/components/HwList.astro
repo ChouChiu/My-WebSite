@@ -11,95 +11,95 @@ interface Props {
 const { data, subjects, initialDate, isDataLoaded } = Astro.props;
 ---
 
-{!isDataLoaded && data.length === 0 ? (
-  <div id="hw-loading" style="display:flex;align-items:center;justify-content:center;min-height:300px;gap:8px;color:var(--colorNeutralForeground3);">
-    <fluent-spinner></fluent-spinner>
-    <span>加載中…</span>
+<!-- Loading spinner -->
+<div id="hw-loading" style="display:flex;align-items:center;justify-content:center;min-height:300px;gap:8px;color:var(--colorNeutralForeground3);">
+  <fluent-spinner></fluent-spinner>
+  <span>加載中…</span>
+</div>
+
+<!-- Main UI - always rendered, visibility controlled by CSS/JS -->
+<div id="hw-root" class="hidden-on-load">
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>作業列表</h2>
+    <fluent-button id="btn-download" appearance="outline">下載圖片</fluent-button>
   </div>
-) : (
-  <div id="hw-root">
-    <!-- Page Header -->
-    <div class="page-header">
-      <h2>作業列表</h2>
-      <fluent-button id="btn-download" appearance="outline">下載圖片</fluent-button>
-    </div>
 
-    <!-- Filters -->
-    <div class="filters-grid">
-      <div class="filter-item">
-        <fluent-label>發佈日期</fluent-label>
-        <input type="date" class="filter-input" id="filter-date" value={initialDate} />
-      </div>
-      <div class="filter-item">
-        <fluent-label>科目</fluent-label>
-        <select class="filter-input" id="filter-subject">
-          <option value="">全部</option>
-          {subjects.map((s) => <option value={s}>{s}</option>)}
-        </select>
-      </div>
-      <div class="filter-item">
-        <fluent-label>截止狀態</fluent-label>
-        <select class="filter-input" id="filter-status">
-          <option value="">全部</option>
-          <option value="overdue">已過期</option>
-          <option value="today">今天到期</option>
-          <option value="future">未來</option>
-        </select>
-      </div>
+  <!-- Filters -->
+  <div class="filters-grid">
+    <div class="filter-item">
+      <fluent-label>發佈日期</fluent-label>
+      <input type="date" class="filter-input" id="filter-date" value={initialDate} />
     </div>
-
-    <!-- Actions -->
-    <div class="actions-row">
-      <fluent-button id="btn-reset" appearance="outline">重置篩選</fluent-button>
-      <div id="upload-area" class="upload-area" style={isDataLoaded && data.length > 0 ? "display:none" : ""}>
-        <input type="file" id="file-upload" accept="application/json" />
-      </div>
+    <div class="filter-item">
+      <fluent-label>科目</fluent-label>
+      <select class="filter-input" id="filter-subject">
+        <option value="">全部</option>
+        {subjects.map((s) => <option value={s}>{s}</option>)}
+      </select>
     </div>
+    <div class="filter-item">
+      <fluent-label>截止狀態</fluent-label>
+      <select class="filter-input" id="filter-status">
+        <option value="">全部</option>
+        <option value="overdue">已過期</option>
+        <option value="today">今天到期</option>
+        <option value="future">未來</option>
+      </select>
+    </div>
+  </div>
 
-    <!-- Stats -->
-    <div class="stat-grid">
-      <div class="stat-item">
-        <div class="stat-content">
-          <i class="bi bi-journal-plus stat-icon"></i>
-          <div>
-            <div class="stat-title">發布功課</div>
-            <div class="stat-value" id="stat-issued">0</div>
-          </div>
-        </div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-content">
-          <i class="bi bi-clock stat-icon"></i>
-          <div>
-            <div class="stat-title">截止功課</div>
-            <div class="stat-value" id="stat-due">0</div>
-          </div>
+  <!-- Actions -->
+  <div class="actions-row">
+    <fluent-button id="btn-reset" appearance="outline">重置篩選</fluent-button>
+    <div id="upload-area" class="upload-area">
+      <input type="file" id="file-upload" accept="application/json" />
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stat-grid">
+    <div class="stat-item">
+      <div class="stat-content">
+        <i class="bi bi-journal-plus stat-icon"></i>
+        <div>
+          <div class="stat-title">發布功課</div>
+          <div class="stat-value" id="stat-issued">0</div>
         </div>
       </div>
     </div>
-
-    <!-- Table -->
-    <div class="table-card">
-      <div class="table-scroll">
-        <table id="hw-table" class="hw-table">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>科目</th>
-              <th>作業</th>
-              <th>發佈</th>
-              <th>截止</th>
-              <th>班級</th>
-              <th>狀態</th>
-              <th>備註</th>
-            </tr>
-          </thead>
-          <tbody id="hw-tbody"></tbody>
-        </table>
+    <div class="stat-item">
+      <div class="stat-content">
+        <i class="bi bi-clock stat-icon"></i>
+        <div>
+          <div class="stat-title">截止功課</div>
+          <div class="stat-value" id="stat-due">0</div>
+        </div>
       </div>
     </div>
   </div>
-)}
+
+  <!-- Table -->
+  <div class="table-card">
+    <div class="table-scroll">
+      <table id="hw-table" class="hw-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>科目</th>
+            <th>作業</th>
+            <th>發佈</th>
+            <th>截止</th>
+            <th>班級</th>
+            <th>狀態</th>
+            <th>備註</th>
+          </tr>
+        </thead>
+        <tbody id="hw-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 <script define:vars={{ data, subjects, initialDate, isDataLoaded }}>
   // Inline server data into client
@@ -139,10 +139,31 @@ const { data, subjects, initialDate, isDataLoaded } = Astro.props;
   const fileUpload = document.getElementById("file-upload") as HTMLInputElement | null;
   const uploadArea = document.getElementById("upload-area");
   const hwTable = document.getElementById("hw-table") as HTMLTableElement | null;
+  const hwRoot = document.getElementById("hw-root");
+  const hwLoading = document.getElementById("hw-loading");
+
+  // Helper function to escape HTML special characters
+  function escapeHtml(text: string): string {
+    const map: { [key: string]: string } = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#039;",
+    };
+    return text.replace(/[&<>"']/g, (c) => map[c]);
+  }
+
+  function updateUIVisibility() {
+    // Show hw-root and hide hw-loading if data is available, otherwise show loading
+    const hasData = items.length > 0;
+    if (hwRoot) hwRoot.classList.toggle("hidden-on-load", !hasData);
+    if (hwLoading) hwLoading.style.display = hasData ? "none" : "flex";
+  }
 
   function getStatusHTML(dueDateStr: string) {
     const s = getHomeworkStatus(dueDateStr);
-    return `<span class="status-badge ${s.cls}"><i class="bi bi-${s.icon}"></i><span>${s.text}</span></span>`;
+    return `<span class="status-badge ${s.cls}"><i class="bi bi-${s.icon}"></i><span>${escapeHtml(s.text)}</span></span>`;
   }
 
   function renderTable() {
@@ -160,15 +181,22 @@ const { data, subjects, initialDate, isDataLoaded } = Astro.props;
     tbody.innerHTML = filtered
       .map((it) => {
         const s = getHomeworkStatus(it.due_date);
+        const id = escapeHtml(String(it.id));
+        const subj = escapeHtml(it.subject);
+        const hw_name = escapeHtml(it.homework_name);
+        const issue = escapeHtml(it.issue_date);
+        const due = escapeHtml(it.due_date);
+        const cls = escapeHtml(it.class_group || "");
+        const rem = escapeHtml(it.remarks || "無備註");
         return `<tr class="${s.cls}">
-          <td>${it.id}</td>
-          <td>${it.subject}</td>
-          <td>${it.homework_name}</td>
-          <td>${it.issue_date}</td>
-          <td>${it.due_date}</td>
-          <td>${it.class_group || ""}</td>
+          <td>${id}</td>
+          <td>${subj}</td>
+          <td>${hw_name}</td>
+          <td>${issue}</td>
+          <td>${due}</td>
+          <td>${cls}</td>
           <td>${getStatusHTML(it.due_date)}</td>
-          <td><div class="remarks-cell">${it.remarks || "無備註"}</div></td>
+          <td><div class="remarks-cell">${rem}</div></td>
         </tr>`;
       })
       .join("");
@@ -182,7 +210,12 @@ const { data, subjects, initialDate, isDataLoaded } = Astro.props;
     if (!filterSubject) return;
     const current = filterSubject.value;
     filterSubject.innerHTML = `<option value="">全部</option>` +
-      currentSubjects.map((s) => `<option value="${s}"${s === current ? " selected" : ""}>${s}</option>`).join("");
+      currentSubjects
+        .map(
+          (s) =>
+            `<option value="${escapeHtml(s)}"${s === current ? " selected" : ""}>${escapeHtml(s)}</option>`
+        )
+        .join("");
   }
 
   // Filter listeners
@@ -215,6 +248,7 @@ const { data, subjects, initialDate, isDataLoaded } = Astro.props;
         currentSubjects = extractSubjects(items);
         updateSubjectOptions();
         if (uploadArea) uploadArea.style.display = "none";
+        updateUIVisibility();
         renderTable();
       } catch (err: unknown) {
         const message = err instanceof Error ? err.message : String(err);
@@ -245,7 +279,7 @@ const { data, subjects, initialDate, isDataLoaded } = Astro.props;
         getComputedStyle(document.body).getPropertyValue("--colorNeutralBackground2") || "#111111";
 
       const header = document.createElement("div");
-      header.innerHTML = `<h2 style="margin:0 0 8px;color:${getComputedStyle(document.body).getPropertyValue("--colorBrandForeground1") || "#479ef5"}">功課表</h2><div style="color:var(--colorNeutralForeground2)">${targetZh}</div>`;
+      header.innerHTML = `<h2 style="margin:0 0 8px;color:${getComputedStyle(document.body).getPropertyValue("--colorBrandForeground1") || "#479ef5"}">功課表</h2><div style="color:var(--colorNeutralForeground2)">${escapeHtml(targetZh)}</div>`;
       temp.appendChild(header);
 
       if (hwTable) {
@@ -272,11 +306,16 @@ const { data, subjects, initialDate, isDataLoaded } = Astro.props;
     }
   });
 
-  // Initial render
+  // Set initial visibility state and render
+  updateUIVisibility();
   renderTable();
 </script>
 
 <style>
+  .hidden-on-load {
+    display: none;
+  }
+
   .page-header {
     display: flex;
     align-items: center;
