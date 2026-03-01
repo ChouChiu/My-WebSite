@@ -14,14 +14,14 @@ const posts: CollectionEntry<"blog">[] = _posts.sort(
   {
     posts.length === 0 ? (
       <div class="blog-empty">
-        <h2>Blog</h2>
-        <p>暫無文章。</p>
+        <fluent-text block weight="semibold" size="600">Blog</fluent-text>
+        <fluent-text block size="300">暫無文章。</fluent-text>
       </div>
     ) : (
       <div class="blog-list">
         <div class="blog-list-header">
-          <h2>Blog</h2>
-          <span class="blog-count">{posts.length} 篇文章</span>
+          <fluent-text weight="semibold" size="600">Blog</fluent-text>
+          <fluent-badge appearance="ghost" size="small">{posts.length} 篇文章</fluent-badge>
         </div>
         <div class="blog-grid">
           {posts.map((post: CollectionEntry<"blog">) => (
@@ -70,16 +70,9 @@ const posts: CollectionEntry<"blog">[] = _posts.sort(
   }
   .blog-list-header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 12px;
     margin-bottom: 20px;
-  }
-  .blog-list-header h2 {
-    margin: 0;
-  }
-  .blog-count {
-    color: var(--colorNeutralForeground4);
-    font-size: 12px;
   }
   .blog-grid {
     display: grid;

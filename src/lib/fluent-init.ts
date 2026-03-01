@@ -4,6 +4,8 @@ import "@fluentui/web-components/badge.js";
 import "@fluentui/web-components/button.js";
 import "@fluentui/web-components/divider.js";
 import "@fluentui/web-components/label.js";
+import "@fluentui/web-components/text.js";
+import "@fluentui/web-components/image.js";
 
 // Form components
 import "@fluentui/web-components/text-input.js";

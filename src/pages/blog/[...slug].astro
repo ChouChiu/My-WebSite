@@ -36,9 +36,10 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
     <!-- Main content -->
     <article class="blog-article">
       <header class="blog-article-header">
-        <a href="/blog" class="blog-back-link">
-          <i class="bi bi-arrow-left"></i> 返回博客列表
-        </a>
+        <fluent-anchor-button href="/blog" appearance="subtle" size="small" class="blog-back-link">
+          <i class="bi bi-arrow-left" slot="start"></i>
+          返回博客列表
+        </fluent-anchor-button>
         <h1 class="blog-article-title">{post.data.title}</h1>
         <div class="blog-article-meta">
           <time datetime={post.data.date.toISOString()}>
@@ -48,7 +49,7 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
             post.data.tags && post.data.tags.length > 0 && (
               <div class="blog-article-tags">
                 {post.data.tags.map((tag: string) => (
-                  <span class="blog-tag">{tag}</span>
+                  <fluent-badge appearance="tint" color="brand" size="small">{tag}</fluent-badge>
                 ))}
               </div>
             )
@@ -61,7 +62,7 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
         }
       </header>
 
-      <hr class="blog-divider" />
+      <fluent-divider class="blog-divider"></fluent-divider>
 
       <div class="markdown-body">
         <Content />
@@ -74,15 +75,17 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
         <div class="blog-toc-sticky">
           <div class="blog-toc-container">
             <div class="blog-toc-header">
-              <h3 class="blog-toc-title">目录</h3>
-              <button
+              <fluent-text weight="semibold" size="300" class="blog-toc-title">目录</fluent-text>
+              <fluent-button
                 id="toc-toggle"
+                appearance="transparent"
+                icon-only
+                size="small"
                 class="blog-toc-toggle"
                 aria-label="切换目录"
-                type="button"
               >
                 <i class="bi bi-chevron-up"></i>
-              </button>
+              </fluent-button>
             </div>
             <nav id="toc-content" class="blog-toc-nav">
               {headings.map((heading: MarkdownHeading) => {
@@ -260,19 +263,19 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
      ══════════════════════════════════════════════════════════ */
 
   :root {
-    --gh-bg: #1e1e1e;
-    --gh-bg-secondary: #252525;
-    --gh-bg-tertiary: #2d2d2d;
-    --gh-fg: #e8e8e8;
-    --gh-fg-muted: #9a9a9a;
-    --gh-fg-subtle: #757575;
-    --gh-border: #2f2f2f;
-    --gh-border-muted: #282828;
-    --gh-link: #5ba6e6;
-    --gh-link-hover: #78b8ed;
-    --gh-accent: #0f6cbd;
-    --gh-code-bg: rgba(110, 118, 129, 0.3);
-    --gh-code-block-bg: #252525;
+    --gh-bg: #1b1b1f;
+    --gh-bg-secondary: #222228;
+    --gh-bg-tertiary: #2a2a30;
+    --gh-fg: #e3e3e8;
+    --gh-fg-muted: #8e8e98;
+    --gh-fg-subtle: #6c6c76;
+    --gh-border: #2e2e38;
+    --gh-border-muted: #26262e;
+    --gh-link: #7ca6c4;
+    --gh-link-hover: #96bdd6;
+    --gh-accent: #4078a8;
+    --gh-code-bg: rgba(110, 118, 129, 0.25);
+    --gh-code-block-bg: #222228;
     --gh-font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
       Helvetica, Arial, sans-serif;
     --gh-font-mono: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas,
@@ -300,19 +303,7 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
 
   /* ── Back link ── */
   .blog-back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--gh-fg-muted);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 4px 0;
     margin-bottom: 16px;
-    transition: color 150ms ease;
-  }
-  .blog-back-link:hover {
-    color: var(--gh-link);
   }
 
   /* ── Article header ── */
@@ -343,17 +334,6 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
     gap: 6px;
     flex-wrap: wrap;
   }
-  .blog-tag {
-    display: inline-block;
-    padding: 2px 10px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--gh-link);
-    background: rgba(47, 129, 247, 0.1);
-    border: 1px solid rgba(47, 129, 247, 0.2);
-    border-radius: 12px;
-    line-height: 1.6;
-  }
   .blog-article-desc {
     margin: 12px 0 0 0;
     font-size: 16px;
@@ -363,8 +343,6 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
   }
 
   .blog-divider {
-    border: none;
-    border-top: 1px solid var(--gh-border);
     margin: 16px 0 24px 0;
   }
 
@@ -398,20 +376,11 @@ const formattedDate = post.data.date.toLocaleDateString("zh-CN", {
   }
 
   .blog-toc-title {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 600;
     color: var(--gh-fg);
   }
 
   .blog-toc-toggle {
     display: none;
-    background: none;
-    border: none;
-    color: var(--gh-fg-muted);
-    cursor: pointer;
-    padding: 2px;
-    font-size: 14px;
   }
 
   .blog-toc-nav {

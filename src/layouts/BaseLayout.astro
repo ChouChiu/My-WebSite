@@ -66,27 +66,28 @@ function isActive(href: string): boolean {
 
     <div class="app-container">
       <header class="site-header">
-        <h1 class="site-title">{title}</h1>
+        <fluent-text size="500" weight="bold" class="site-title">{title}</fluent-text>
         <nav class="site-nav">
           {
             navLinks.map((link) => (
-              <a
+              <fluent-anchor-button
                 href={link.href}
-                class:list={["nav-link", { active: isActive(link.href) }]}
+                appearance={isActive(link.href) ? "subtle" : "transparent"}
+                class:list={["nav-btn", { active: isActive(link.href) }]}
               >
                 {link.label}
-              </a>
+              </fluent-anchor-button>
             ))
           }
-          <a
+          <fluent-anchor-button
             href="https://github.com/WingChunWong"
-            class="nav-link nav-github"
             target="_blank"
-            rel="noopener noreferrer"
+            appearance="transparent"
+            icon-only
+            class="nav-github"
           >
-            <i class="bi bi-github" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span>
-          </a>
+            <i class="bi bi-github" aria-hidden="true" slot="start"></i>
+          </fluent-anchor-button>
         </nav>
       </header>
 
@@ -110,23 +111,23 @@ function isActive(href: string): boolean {
       }
 
       :root {
-        --colorNeutralBackground1: #1e1e1e;
-        --colorNeutralBackground2: #252525;
-        --colorNeutralBackground3: #2d2d2d;
-        --colorNeutralBackground4: #383838;
-        --colorNeutralForeground1: #e8e8e8;
-        --colorNeutralForeground2: #c4c4c4;
-        --colorNeutralForeground3: #9a9a9a;
-        --colorNeutralForeground4: #757575;
-        --colorNeutralStroke1: #3a3a3a;
-        --colorNeutralStroke2: #2f2f2f;
-        --colorBrandBackground: #0f6cbd;
-        --colorBrandForeground1: #5ba6e6;
-        --colorBrandForeground2: #78b8ed;
-        --colorBrandStroke1: #5ba6e6;
-        --colorBrandStroke2: rgba(91, 166, 230, 0.24);
-        --colorSubtleBackgroundHover: rgba(255, 255, 255, 0.05);
-        --colorSubtleBackgroundPressed: rgba(255, 255, 255, 0.03);
+        --colorNeutralBackground1: #1b1b1f;
+        --colorNeutralBackground2: #222228;
+        --colorNeutralBackground3: #2a2a30;
+        --colorNeutralBackground4: #363640;
+        --colorNeutralForeground1: #e3e3e8;
+        --colorNeutralForeground2: #b8b8c0;
+        --colorNeutralForeground3: #8e8e98;
+        --colorNeutralForeground4: #6c6c76;
+        --colorNeutralStroke1: #3a3a44;
+        --colorNeutralStroke2: #2e2e38;
+        --colorBrandBackground: #4078a8;
+        --colorBrandForeground1: #7ca6c4;
+        --colorBrandForeground2: #96bdd6;
+        --colorBrandStroke1: #7ca6c4;
+        --colorBrandStroke2: rgba(124, 166, 196, 0.18);
+        --colorSubtleBackgroundHover: rgba(255, 255, 255, 0.04);
+        --colorSubtleBackgroundPressed: rgba(255, 255, 255, 0.02);
         --colorStatusSuccess: #0e700e;
         --colorStatusSuccessForeground: #54b054;
         --colorStatusSuccessBackground: rgba(14, 112, 14, 0.15);
@@ -309,55 +310,34 @@ function isActive(href: string): boolean {
         background: var(--colorNeutralBackground2);
         border: 1px solid var(--colorNeutralStroke2);
         border-radius: var(--borderRadiusLarge);
-        padding: 12px 20px;
+        padding: 10px 20px;
         margin-bottom: 20px;
         display: flex;
         align-items: center;
-        gap: 20px;
-        animation: slideDown var(--durationSlow) var(--curveDecelerateMid) both;
+        gap: 16px;
+        animation: fadeIn var(--durationNormal) var(--curveEasyEase) both;
       }
       .site-title {
-        margin: 0;
-        margin-right: 20px;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: -0.01em;
+        margin-right: 12px;
         white-space: nowrap;
+        letter-spacing: -0.01em;
       }
       .site-nav {
         display: flex;
-        gap: 4px;
+        gap: 2px;
         align-items: center;
         flex: 1;
         min-width: 0;
       }
 
-      /* ── Nav Links ── */
-      .nav-link {
+      /* ── Nav Buttons ── */
+      .nav-btn.active {
         position: relative;
-        display: inline-flex;
-        align-items: center;
-        padding: 8px 12px;
-        border-radius: var(--borderRadiusMedium);
-        color: var(--colorNeutralForeground2);
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-        transition:
-          color var(--durationFast) var(--curveEasyEase),
-          background var(--durationFast) var(--curveEasyEase);
       }
-      .nav-link:hover {
-        color: var(--colorBrandForeground1);
-        background: var(--colorSubtleBackgroundHover);
-      }
-      .nav-link.active {
-        color: var(--colorBrandForeground1);
-      }
-      .nav-link.active::after {
+      .nav-btn.active::after {
         content: "";
         position: absolute;
-        bottom: 2px;
+        bottom: 4px;
         left: 12px;
         right: 12px;
         height: 2px;
@@ -366,9 +346,6 @@ function isActive(href: string): boolean {
       }
       .nav-github {
         margin-left: auto;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
       }
       .nav-github i {
         font-size: 18px;
