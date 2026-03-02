@@ -211,42 +211,29 @@ const stats = {
     justify-content: center;
     gap: 8px;
     text-align: center;
-    transition: 
-      transform var(--durationFast) var(--curveEasyEase),
-      border-color var(--durationFast) var(--curveEasyEase),
-      background-color var(--durationFast) var(--curveEasyEase),
-      box-shadow var(--durationNormal) var(--curveEasyEase);
+    transition: border-color var(--durationNormal) var(--curveEasyEase);
   }
 
   .stat-card:hover {
-    transform: translateY(-4px);
     border-color: var(--colorNeutralStroke1);
-    background: var(--colorNeutralBackground2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
   }
 
   .stat-card i {
     font-size: 20px;
     opacity: 0.9;
-    transition: transform var(--durationFast) var(--curveEasyEase);
-  }
-
-  .stat-card:hover i {
-    transform: scale(1.1);
   }
 
   .stat-total {
     grid-column: 1 / -1;
     padding: 20px;
     gap: 6px;
-    background: linear-gradient(135deg, var(--colorBrandBackground2) 0%, var(--colorNeutralBackground3) 100%);
+    background: var(--colorNeutralBackground3);
     border-color: var(--colorBrandStroke1);
     border-radius: var(--borderRadiusLarge);
   }
 
   .stat-total:hover {
-    transform: translateY(-4px);
-    border-color: var(--colorBrandStroke1Hover);
+    border-color: var(--colorBrandForeground1);
   }
 
   .stat-total .stat-value {
@@ -360,7 +347,7 @@ const stats = {
   }
 
   .timeline-event:hover .event-dot {
-    transform: scale(1.3);
+    transform: scale(1.2);
     box-shadow: 0 0 0 3px var(--colorNeutralBackground1), 0 0 0 4px var(--colorBrandStroke1);
   }
 
@@ -380,26 +367,21 @@ const stats = {
     background: transparent;
   }
 
-  /* Dot colors by type with glow effect */
+  /* Dot colors by type */
   [data-type="commit"] .event-dot { 
     background: var(--colorBrandForeground1);
-    box-shadow: 0 0 0 1px var(--colorBrandStroke2), 0 0 8px var(--colorBrandForeground1);
   }
   [data-type="pr"] .event-dot { 
     background: var(--colorPaletteGreenForeground1);
-    box-shadow: 0 0 0 1px var(--colorPaletteGreenForeground2), 0 0 8px var(--colorPaletteGreenForeground1);
   }
   [data-type="issue"] .event-dot { 
     background: var(--colorStatusWarningForeground);
-    box-shadow: 0 0 0 1px var(--colorStatusWarningForeground), 0 0 8px rgba(255, 200, 0, 0.4);
   }
   [data-type="review"] .event-dot { 
     background: var(--colorPaletteRedForeground1);
-    box-shadow: 0 0 0 1px var(--colorPaletteRedForeground2), 0 0 8px var(--colorPaletteRedForeground1);
   }
   [data-type="repo"] .event-dot { 
     background: var(--colorBrandForeground2);
-    box-shadow: 0 0 0 1px var(--colorBrandStroke1), 0 0 8px var(--colorBrandForeground2);
   }
 
   /* ── Event card ── */
@@ -413,11 +395,7 @@ const stats = {
     min-width: 0;
     position: relative;
     overflow: hidden;
-    transition:
-      border-color var(--durationNormal) var(--curveEasyEase),
-      background-color var(--durationNormal) var(--curveEasyEase),
-      transform var(--durationFast) var(--curveEasyEase),
-      box-shadow var(--durationNormal) var(--curveEasyEase);
+    transition: border-color var(--durationNormal) var(--curveEasyEase);
   }
 
   .event-card::before {
@@ -432,12 +410,7 @@ const stats = {
   }
 
   .event-card:hover {
-    border-color: var(--colorNeutralStroke1Hover);
-    background: var(--colorNeutralBackground2);
-    transform: translateX(4px);
-    box-shadow: 
-      0 2px 8px rgba(0, 0, 0, 0.2),
-      0 0 0 1px var(--colorNeutralStroke1);
+    border-color: var(--colorNeutralStroke1);
   }
 
   [data-type="commit"] .event-card:hover::before { background: var(--colorBrandForeground1); }

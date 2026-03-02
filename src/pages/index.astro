@@ -111,9 +111,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     background: var(--colorNeutralBackground3);
     border: 1px solid var(--colorNeutralStroke2);
     border-radius: var(--borderRadiusLarge);
-    transition:
-      border-color var(--durationNormal) var(--curveEasyEase),
-      background-color var(--durationNormal) var(--curveEasyEase);
+    transition: border-color var(--durationNormal) var(--curveEasyEase);
   }
 
   .info-card:hover {
@@ -127,7 +125,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     width: 36px;
     height: 36px;
     border-radius: var(--borderRadiusMedium);
-    background: rgba(124, 166, 196, 0.10);
+    background: var(--colorBrandStroke2);
     color: var(--colorBrandForeground1);
     font-size: 16px;
     flex-shrink: 0;
@@ -164,9 +162,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     border: 1px solid var(--colorNeutralStroke2);
     border-radius: var(--borderRadiusLarge);
     padding: 12px 14px;
-    transition:
-      border-color var(--durationNormal) var(--curveEasyEase),
-      background-color var(--durationNormal) var(--curveEasyEase);
+    transition: border-color var(--durationNormal) var(--curveEasyEase);
   }
 
   .stats-unified-card:hover {

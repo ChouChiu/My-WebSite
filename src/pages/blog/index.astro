@@ -93,11 +93,10 @@ const posts: CollectionEntry<"blog">[] = _posts.sort(
     background: var(--colorNeutralBackground3);
     border: 1px solid var(--colorNeutralStroke2);
     border-radius: var(--borderRadiusXLarge);
-    transition: border-color 180ms var(--curveEasyEase), box-shadow 180ms var(--curveEasyEase);
+    transition: border-color var(--durationNormal) var(--curveEasyEase);
   }
   .blog-card-inner:hover {
     border-color: var(--colorNeutralStroke1);
-    box-shadow: var(--shadow8);
   }
   .blog-card-cover {
     height: 160px;
@@ -175,7 +174,8 @@ const posts: CollectionEntry<"blog">[] = _posts.sort(
 
   /* Improve focus accessibility */
   .blog-card:focus-visible {
-    outline: 3px solid rgba(71,158,245,0.14);
-    outline-offset: 3px;
+    outline: 2px solid var(--colorBrandForeground1);
+    outline-offset: 2px;
+    border-radius: var(--borderRadiusXLarge);
   }
 </style>
