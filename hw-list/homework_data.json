@@ -3112,5 +3112,50 @@
     "subject": "數學 -- MATH",
     "homework_name": "3/3 Form Test Ch.7",
     "remarks": ""
+  },
+  {
+    "id": "記事6990",
+    "issue_date": "2026-03-03",
+    "due_date": "2026-03-12",
+    "class_group": "全班",
+    "subject": "中史 -- CHIS",
+    "homework_name": "級測",
+    "remarks": ""
+  },
+  {
+    "id": "記事6989",
+    "issue_date": "2026-03-03",
+    "due_date": "2026-03-12",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "級測",
+    "remarks": ""
+  },
+  {
+    "id": "記事6988",
+    "issue_date": "2026-03-03",
+    "due_date": "2026-03-10",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "共閲圖書測驗/匯報",
+    "remarks": ""
+  },
+  {
+    "id": "75857",
+    "issue_date": "2026-03-03",
+    "due_date": "2026-03-04",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Grammar Workbook p.154-156",
+    "remarks": ""
+  },
+  {
+    "id": "記事6987",
+    "issue_date": "2026-03-03",
+    "due_date": "2026-03-10",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "Form Test Ch.8",
+    "remarks": ""
   }
 ]
