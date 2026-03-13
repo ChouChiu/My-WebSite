@@ -3310,5 +3310,41 @@
     "subject": "數學 -- MATH",
     "homework_name": "WS 9A p1-4",
     "remarks": ""
+  },
+  {
+    "id": "76099",
+    "issue_date": "2026-03-13",
+    "due_date": "2026-03-16",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "步步升7",
+    "remarks": ""
+  },
+  {
+    "id": "76098",
+    "issue_date": "2026-03-13",
+    "due_date": "2026-03-16",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Grammar WB p.148-149",
+    "remarks": ""
+  },
+  {
+    "id": "76097",
+    "issue_date": "2026-03-13",
+    "due_date": "2026-03-16",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Copy the UT Study Guide vocab x2",
+    "remarks": ""
+  },
+  {
+    "id": "76096",
+    "issue_date": "2026-03-13",
+    "due_date": "2026-03-16",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW56",
+    "remarks": ""
   }
 ]
