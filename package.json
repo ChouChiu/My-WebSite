@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^5.0.0",
-    "@biomejs/biome": "^2.4.6",
+    "@biomejs/biome": "^2.4.7",
     "@types/node": "^25.5.0",
     "astro": "^6.0.4",
     "hastscript": "^9.0.1",
