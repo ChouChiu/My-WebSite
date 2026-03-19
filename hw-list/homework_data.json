@@ -3346,5 +3346,59 @@
     "subject": "數學 -- MATH",
     "homework_name": "CW56",
     "remarks": ""
+  },
+  {
+    "id": "76220",
+    "issue_date": "2026-03-19",
+    "due_date": "2026-03-20",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "筆記 q.2",
+    "remarks": ""
+  },
+  {
+    "id": "76219",
+    "issue_date": "2026-03-19",
+    "due_date": "2026-03-20",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "Prince and The Pauper WS p.2",
+    "remarks": ""
+  },
+  {
+    "id": "76218",
+    "issue_date": "2026-03-19",
+    "due_date": "2026-03-20",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "Prince and The Pauper WS p.2",
+    "remarks": ""
+  },
+  {
+    "id": "76217",
+    "issue_date": "2026-03-19",
+    "due_date": "2026-03-20",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "Math DICT",
+    "remarks": ""
+  },
+  {
+    "id": "76216",
+    "issue_date": "2026-03-19",
+    "due_date": "2026-03-20",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "HW 8B",
+    "remarks": ""
+  },
+  {
+    "id": "76200",
+    "issue_date": "2026-03-19",
+    "due_date": "2026-03-19",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "統測簽改",
+    "remarks": ""
   }
 ]
