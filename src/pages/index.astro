@@ -235,10 +235,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     if (qqBtn) {
       qqBtn.addEventListener("click", async () => {
         const qq = qqBtn.dataset.qq;
+        if (!qq) return;
         try {
           await navigator.clipboard.writeText(qq);
           // Feedback: change text temporarily
           const span = qqBtn.querySelector("span");
+          if (!span) return;
           const originalText = span.textContent;
           span.textContent = "Copied!";
           setTimeout(() => {
