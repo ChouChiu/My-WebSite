@@ -3427,5 +3427,68 @@
     "subject": "數學 -- MATH",
     "homework_name": "Ch 5, 7, 8 Supp. Exercise",
     "remarks": ""
+  },
+  {
+    "id": "76260",
+    "issue_date": "2026-03-26",
+    "due_date": "2026-04-08",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "Easter Assignment",
+    "remarks": ""
+  },
+  {
+    "id": "記事7058",
+    "issue_date": "2026-03-26",
+    "due_date": "2026-04-08",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Raz kids 4 assignments",
+    "remarks": ""
+  },
+  {
+    "id": "記事7057",
+    "issue_date": "2026-03-26",
+    "due_date": "2026-04-08",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Soild memory",
+    "remarks": ""
+  },
+  {
+    "id": "76259",
+    "issue_date": "2026-03-26",
+    "due_date": "2026-04-09",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "9/4 默成語 + 創默",
+    "remarks": ""
+  },
+  {
+    "id": "76258",
+    "issue_date": "2026-03-26",
+    "due_date": "2026-04-08",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Sentence skills booklet",
+    "remarks": ""
+  },
+  {
+    "id": "76255",
+    "issue_date": "2026-03-26",
+    "due_date": "2026-04-08",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "步步升8",
+    "remarks": ""
+  },
+  {
+    "id": "76253",
+    "issue_date": "2026-03-26",
+    "due_date": "2026-04-08",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "抄成語101-120（兩次）",
+    "remarks": ""
   }
 ]
