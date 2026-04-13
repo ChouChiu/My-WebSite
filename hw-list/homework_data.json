@@ -3697,5 +3697,50 @@
     "subject": "歷史 -- HIST",
     "homework_name": "歷史 UT Sign",
     "remarks": ""
+  },
+  {
+    "id": "76456",
+    "issue_date": "2026-04-13",
+    "due_date": "2026-04-14",
+    "class_group": "全班",
+    "subject": "基教 -- RSC",
+    "homework_name": "RS WB",
+    "remarks": ""
+  },
+  {
+    "id": "76455",
+    "issue_date": "2026-04-13",
+    "due_date": "2026-04-14",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW60",
+    "remarks": ""
+  },
+  {
+    "id": "76452",
+    "issue_date": "2026-04-13",
+    "due_date": "2026-04-14",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "作文改正",
+    "remarks": ""
+  },
+  {
+    "id": "76450",
+    "issue_date": "2026-04-13",
+    "due_date": "2026-04-14",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Post card WS Writing WS p.4",
+    "remarks": ""
+  },
+  {
+    "id": "76446",
+    "issue_date": "2026-04-13",
+    "due_date": "2026-04-14",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Grammar WS",
+    "remarks": ""
   }
 ]
