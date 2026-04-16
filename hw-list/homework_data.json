@@ -3823,5 +3823,50 @@
     "subject": "中文 -- CHIN",
     "homework_name": "默書簽改",
     "remarks": ""
+  },
+  {
+    "id": "76548",
+    "issue_date": "2026-04-16",
+    "due_date": "2026-04-23",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Book Report Submit",
+    "remarks": ""
+  },
+  {
+    "id": "76547",
+    "issue_date": "2026-04-16",
+    "due_date": "2026-04-17",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Listening test tmr",
+    "remarks": ""
+  },
+  {
+    "id": "76546",
+    "issue_date": "2026-04-16",
+    "due_date": "2026-04-17",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "VLE Listening Test (Notebook)",
+    "remarks": ""
+  },
+  {
+    "id": "76545",
+    "issue_date": "2026-04-16",
+    "due_date": "2026-04-20",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "Ch.10",
+    "remarks": ""
+  },
+  {
+    "id": "76544",
+    "issue_date": "2026-04-16",
+    "due_date": "2026-04-20",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW63",
+    "remarks": ""
   }
 ]
