@@ -3886,5 +3886,41 @@
     "subject": "英文 -- ENG",
     "homework_name": "Grammar WB",
     "remarks": ""
+  },
+  {
+    "id": "76616",
+    "issue_date": "2026-04-20",
+    "due_date": "2026-04-21",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW64",
+    "remarks": ""
+  },
+  {
+    "id": "76609",
+    "issue_date": "2026-04-20",
+    "due_date": "2026-04-21",
+    "class_group": "全班",
+    "subject": "科學 -- SCI",
+    "homework_name": "WBp.33-35",
+    "remarks": ""
+  },
+  {
+    "id": "76605",
+    "issue_date": "2026-04-20",
+    "due_date": "2026-04-21",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Listening book p.68-69",
+    "remarks": ""
+  },
+  {
+    "id": "76603",
+    "issue_date": "2026-04-20",
+    "due_date": "2026-04-21",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Grammar WBp.85",
+    "remarks": ""
   }
 ]
