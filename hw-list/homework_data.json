@@ -3922,5 +3922,23 @@
     "subject": "英文 -- ENG",
     "homework_name": "Grammar WBp.85",
     "remarks": ""
+  },
+  {
+    "id": "76649",
+    "issue_date": "2026-04-21",
+    "due_date": "2026-04-22",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "抄燕詩",
+    "remarks": "（7，8，12，21，32）3次"
+  },
+  {
+    "id": "76645",
+    "issue_date": "2026-04-21",
+    "due_date": "2026-04-22",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW 65",
+    "remarks": ""
   }
 ]
