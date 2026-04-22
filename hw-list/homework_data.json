@@ -3940,5 +3940,23 @@
     "subject": "數學 -- MATH",
     "homework_name": "CW 65",
     "remarks": ""
+  },
+  {
+    "id": "76679",
+    "issue_date": "2026-04-22",
+    "due_date": "2026-04-23",
+    "class_group": "全班",
+    "subject": "音樂 -- MUS",
+    "homework_name": "CW66",
+    "remarks": ""
+  },
+  {
+    "id": "76678",
+    "issue_date": "2026-04-22",
+    "due_date": "2026-04-23",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Book Reports",
+    "remarks": ""
   }
 ]
