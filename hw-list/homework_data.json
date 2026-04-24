@@ -3958,5 +3958,32 @@
     "subject": "英文 -- ENG",
     "homework_name": "Book Reports",
     "remarks": ""
+  },
+  {
+    "id": "76749",
+    "issue_date": "2026-04-24",
+    "due_date": "2026-04-25",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW68",
+    "remarks": ""
+  },
+  {
+    "id": "76747",
+    "issue_date": "2026-04-24",
+    "due_date": "2026-04-25",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "默書簽改",
+    "remarks": ""
+  },
+  {
+    "id": "76726",
+    "issue_date": "2026-04-24",
+    "due_date": "2026-04-24",
+    "class_group": "全班",
+    "subject": "歷史 -- HIST",
+    "homework_name": "古羅馬",
+    "remarks": ""
   }
 ]
