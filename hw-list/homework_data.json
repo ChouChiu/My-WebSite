@@ -4039,5 +4039,50 @@
     "subject": "英文 -- ENG",
     "homework_name": "Gramma WB",
     "remarks": ""
+  },
+  {
+    "id": "76881",
+    "issue_date": "2026-05-04",
+    "due_date": "2026-05-05",
+    "class_group": "全班",
+    "subject": "中文 -- CHIN",
+    "homework_name": "步步升p.87",
+    "remarks": ""
+  },
+  {
+    "id": "76880",
+    "issue_date": "2026-05-04",
+    "due_date": "2026-05-05",
+    "class_group": "全班",
+    "subject": "科學 -- SCI",
+    "homework_name": "Wb p.36-40",
+    "remarks": ""
+  },
+  {
+    "id": "76875",
+    "issue_date": "2026-05-04",
+    "due_date": "2026-05-05",
+    "class_group": "全班",
+    "subject": "普話 -- PTH",
+    "homework_name": "VLE EX",
+    "remarks": ""
+  },
+  {
+    "id": "76874",
+    "issue_date": "2026-05-04",
+    "due_date": "2026-05-05",
+    "class_group": "全班",
+    "subject": "普話 -- PTH",
+    "homework_name": "VLE EX",
+    "remarks": ""
+  },
+  {
+    "id": "76873",
+    "issue_date": "2026-05-04",
+    "due_date": "2026-05-05",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW 71",
+    "remarks": ""
   }
 ]
