@@ -4111,5 +4111,23 @@
     "subject": "數學 -- MATH",
     "homework_name": "form test corr + sign",
     "remarks": ""
+  },
+  {
+    "id": "76963",
+    "issue_date": "2026-05-07",
+    "due_date": "2026-05-08",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "GB Unit 14 p.103-p.105",
+    "remarks": ""
+  },
+  {
+    "id": "76960",
+    "issue_date": "2026-05-07",
+    "due_date": "2026-05-08",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW 73",
+    "remarks": ""
   }
 ]
