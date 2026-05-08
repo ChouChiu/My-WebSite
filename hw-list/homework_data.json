@@ -4129,5 +4129,23 @@
     "subject": "數學 -- MATH",
     "homework_name": "CW 73",
     "remarks": ""
+  },
+  {
+    "id": "76987",
+    "issue_date": "2026-05-08",
+    "due_date": "2026-05-11",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "Grammar WS p1,3",
+    "remarks": ""
+  },
+  {
+    "id": "76986",
+    "issue_date": "2026-05-08",
+    "due_date": "2026-05-11",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW74",
+    "remarks": ""
   }
 ]
