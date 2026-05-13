@@ -4147,5 +4147,23 @@
     "subject": "數學 -- MATH",
     "homework_name": "CW74",
     "remarks": ""
+  },
+  {
+    "id": "77067",
+    "issue_date": "2026-05-13",
+    "due_date": "2026-05-14",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Dictionary Work  (2nd Term Exam Study Guide)",
+    "remarks": ""
+  },
+  {
+    "id": "77066",
+    "issue_date": "2026-05-13",
+    "due_date": "2026-05-14",
+    "class_group": "全班",
+    "subject": "英文 -- ENG",
+    "homework_name": "Grammar WS p.4 Tasks 5-6",
+    "remarks": ""
   }
 ]
