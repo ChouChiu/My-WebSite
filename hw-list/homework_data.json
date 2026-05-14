@@ -4165,5 +4165,23 @@
     "subject": "英文 -- ENG",
     "homework_name": "Grammar WS p.4 Tasks 5-6",
     "remarks": ""
+  },
+  {
+    "id": "77085",
+    "issue_date": "2026-05-14",
+    "due_date": "2026-05-18",
+    "class_group": "全班",
+    "subject": "科學 -- SCI",
+    "homework_name": "WB p.41-45",
+    "remarks": ""
+  },
+  {
+    "id": "77084",
+    "issue_date": "2026-05-14",
+    "due_date": "2026-05-15",
+    "class_group": "全班",
+    "subject": "數學 -- MATH",
+    "homework_name": "CW78",
+    "remarks": ""
   }
 ]
